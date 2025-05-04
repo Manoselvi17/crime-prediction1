@@ -100,7 +100,7 @@ if st.button("🔮 **Predict Crime Risk**"):
 st.markdown("---")
 st.markdown("""
     <div style="text-align:center;">
-        🔹 <b>Developed by Pavithra S</b> | AI-Powered Crime Analysis 🔹<br>
-        📧 Contact: <a href="mailto:Vithrap0@gmail.com">Vithrap0@gmail.com</a>
+        🔹 <b>Developed by Mano selvi M</b> | AI-Powered Crime Analysis 🔹<br>
+        📧 Contact: <a href="mailto:manoselvi1722005@gmail.com">manoselvi1722005@gmail.com</a>
     </div>
 """, unsafe_allow_html=True)
