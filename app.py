@@ -15,8 +15,8 @@ st.set_page_config(
 # Load the trained ML model
 @st.cache_resource
 def load_model():
-    with open(r"C:\\Users\\gokil\\Downloads\\pavi's project\\crime_model_compressed.pkl", "rb") as f:
-        return joblib.load(f)
+    with open("crime_model_compressed.pkl", "rb") as f:
+    model = pickle.load(f)
 
 # Load label encoders
 @st.cache_resource
