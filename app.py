@@ -20,17 +20,20 @@ def load_model():
 
 # Load label encoders
 @st.cache_resource
-def load_encoders():
-    with open(r"label_encoders.pkl", "rb") as f:
-        return pickle.load(f)
+def load_model():
+    with open("crime_model_compressed.pkl", "rb") as f:
+        model = pickle.load(f)
+    return model
+
 
 # Load model & encoders
 model = load_model()
 encoders = load_encoders()
 
 # Load crime dataset to populate dropdowns
-data_path = r"Indian-Crime-Data-Analysis-Forecasting-main\\crime.csv"
+data_path = "crime.csv"
 crime_data = pd.read_csv(data_path)
+
 
 # Extract unique states and state-district mapping
 locations = crime_data["STATE/UT"].unique()
